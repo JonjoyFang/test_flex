@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骰子练习</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .big_box{
+            display: flex;
+            width:900px;
+            height:110px;
+            margin:50px auto;
+        }
+        .box{
+            display: flex;
+            width:90px;
+            height:90px;
+            border-radius:10px;
+            background:#ace;
+            float: left;
+            margin:10px 15px;
+            box-shadow: 0px 3px 14px #ccc;
+            border: 2px solid #ddd;
+        }
+        .dot{
+            width:24px;
+            height:24px;
+            border-radius: 24px;
+            background:pink;
+            margin:3px;
+        }
+        .box1{
+            justify-content: center;
+            align-items: center;
+        }
+        .box2 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3 .dot:nth-child(2){
+            align-self: center;
+        }
+        .box3  .dot:nth-child(3){
+            align-self: flex-end;
+        }
+        .box4{
+            flex-flow: row wrap;
+        }
+       .dot1{
+           display: flex;
+           width:100%;
+           justify-content: space-between;
+       }
+        .dot2{
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .box5{
+            flex-flow: row wrap;
+        }
+        .dot_center{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .box6{
+            flex-flow: row wrap;
+        }
+        .dot3{
+            display: flex;
+            width:100%;
+            justify-content: space-around;
+        }
+        .dot_center2{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .dot4{
+            display: flex;
+            width:100%;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+<div class="big_box">
+    <div class="box box1"><span class="dot"></span></div>
+    <div class="box box2"><span class="dot"></span><span class="dot"></span></div>
+    <div class="box box3"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="box box4">
+        <div class="dot1"><span class="dot"></span><span class="dot"></span></div>
+        <div class="dot2"><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="box box5">
+        <div class="dot1"><span class="dot"></span><span class="dot"></span></div>
+        <div class="dot_center"><span class="dot"></span></div>
+        <div class="dot2"><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="box box6">
+        <div class="dot3"><span class="dot"></span><span class="dot"></span></div>
+        <div class="dot_center2"><span class="dot"></span><span class="dot"></span></div>
+        <div class="dot4"><span class="dot"></span><span class="dot"></span></div>
+    </div>
+
+
+</div>
+</body>
+</html>
